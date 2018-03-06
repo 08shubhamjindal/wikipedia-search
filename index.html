@@ -1,21 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>wiki</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<body>
-		<div class="container">
-			<h1>Wiki Search</h1>
-			<input type="text" id="searchTerm">
-			<button id="search" class="btn btn-primary">Submit</button>
-			<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary">Random</a>
-			<div id="output"></div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="app1.js"></script>
-</body>
-</html>
+<html lang="en" >
 
+<head>
+  <meta charset="UTF-8">
+  <title>FreeCodeCamp Wikipedia Search</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <div class="container">
+    <div id="content">
+      <h3>Search Wikipedia</h3>
+      
+      <form class='form-inline'>
+        <div class="input-group">
+          <input type='text' id='search' class="form-control search-form" placeholder="Scooby Doo">
+          <span class="input-group-btn" style="width:39px">
+            <button id="search-this"type="button" class="pull-right btn btn-default search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+      </form>
+      
+      <p id="get_random"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get a random page</a></p>
+    </div>
+    
+    <div class='rows' id='results'>
+      
+      
+    </div>
+    
+    
+    
+    <footer class="text-center">
+      <hr>
+      <p id="bottom_text">Kenneth Myers 2016 | <a href="https://codepen.io/kennethjmyers/full/Wwaqxg/" target="_blank">Portfolio</a> | <a href="https://kennmyers.github.io/" target="_blank">Blog</a> | <a href="https://www.linkedin.com/in/kennethjmyers" target="_blank"><i class="fa fa-linkedin-square"></i></a> | <a href="https://github.com/kennmyers" target="_blank"><i class="fa fa-github-square"></i></a> | <a href="https://twitter.com/kennethjmyers" target="_blank"><i class="fa fa-twitter-square"></i></a> | <a href="https://www.instagram.com/kennethjmyers/" target="_blank"><i class="fa fa-instagram"></i></a></p>
+    </footer>
+    
+  </div>
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
